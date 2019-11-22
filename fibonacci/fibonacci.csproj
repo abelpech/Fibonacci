@@ -75,6 +75,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="factorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="factorial.Designer.cs">
+      <DependentUpon>factorial.cs</DependentUpon>
+    </Compile>
     <Compile Include="fibonacci.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="factorial.resx">
+      <DependentUpon>factorial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fibonacci.resx">
       <DependentUpon>fibonacci.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,7 +113,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="fibonacci_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
